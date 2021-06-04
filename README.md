@@ -87,7 +87,7 @@ Other helpfull commands.
     git config --global http.https://gopkg.in.followRedirects true
     git clone https://github.com/FlareHashr/nomp-kawpow-pool.git
     cd nomp-kawpow-pool/
-    ./install.sh (`sudo bash install.sh` on some setups)
+    ./install.sh (sudo bash install.sh "on some setups if you get an error")
 
 -------
 ### Configure Pool
@@ -362,7 +362,7 @@ Change "address": "RKopFydExeQXSZZiSTtg66sRAWvMzFReUj", to your pool created wal
 ### Run Pool
     
     cd ~/nomp-kawpow-pool
-    ./pool-start.sh
+    ./pool-start.sh (sudo bash pool-start.sh "on some setups if you get an error")
 
 ### Donates for developers easyNOMP
 
