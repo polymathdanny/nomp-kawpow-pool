@@ -46,16 +46,18 @@ https://www.youtube.com/watch?v=NOjPFZk4sp0
     usermod -aG sudo pool
     su - pool
     sudo apt install wget
-    wget https://github.com/RavenProject/Ravencoin/releases/download/v4.3.1/raven-4.3.1.0-x86_64-linux-gnu.tar.gz
-    tar -xf raven-4.3.1.0-x86_64-linux-gnu.tar.gz
+    wget https://github.com/RavenProject/Ravencoin/releases/download/v4.3.2.1/raven-4.3.2.1-x86_64-linux-gnu.zip
+    python3 -m zipfile -e raven-4.3.2.1-x86_64-linux-gnu.zip ~
+    tar -xf ~/linux/raven-4.3.2.1-x86_64-linux-gnu.tar.gz
     rm raven*gz
-    cd raven-4.3.1.0/bin
+    cd raven-4.3.2.1/bin
     mkdir -p ~/.raven/
     touch ~/.raven/raven.conf
     echo "rpcuser=user1" > ~/.raven/raven.conf
     echo "rpcpassword=pass1" >> ~/.raven/raven.conf
     echo "prune=550" >> ~/.raven/raven.conf
     echo "daemon=1" >> ~/.raven/raven.conf
+    echo “maxconnections=500” >> ~/.raven/raven.conf
     ./ravend
     ./raven-cli getnewaddress
 
@@ -83,9 +85,9 @@ Other helpfull commands.
     sudo apt install git -y
     cd ~
     git config --global http.https://gopkg.in.followRedirects true
-    git clone https://github.com/DirtyHarryDev/nomp-kawpow-pool.git
+    git clone https://github.com/FlareHashr/nomp-kawpow-pool.git
     cd nomp-kawpow-pool/
-    ./install.sh
+    ./install.sh (`sudo bash install.sh` on some setups)
 
 -------
 ### Configure Pool
