@@ -87,7 +87,7 @@ Other helpfull commands.
     git config --global http.https://gopkg.in.followRedirects true
     git clone https://github.com/FlareHashr/nomp-kawpow-pool.git
     cd nomp-kawpow-pool/
-    ./install.sh (sudo bash install.sh "on some setups if you get an error")
+    ./install.sh (bash install.sh "on some setups if you get an error")
 
 -------
 ### Configure Pool
